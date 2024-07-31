@@ -1,7 +1,27 @@
 ﻿@page "/"
+<PageTitle>Magic The Gathering : Home</PageTitle>
 
-<PageTitle>Home</PageTitle>
+<div class="container">
 
-<h1>Hello, world!</h1>
+    <h1>Discover Your Ultimate Deck-Building Companion</h1>
 
-Welcome to your new app.
+    <p>
+        Welcome to our MTG Deck Builder - your go-to tool for creating unbeatable decks in Magic: The Gathering!
+    </p>
+    <p>
+        Whether you're a veteran Planeswalker or just starting your journey in the multiverse, our platform is designed to elevate your deck-building skills and help you dominate your opponents.
+    </p>
+
+    <h2>Drafting Guide:</h2>
+    <ol>
+        <li><b>Initiate Draft:</b> Start by choosing your favorite card set.</li>
+        <li><b>Select Packs:</b> Each round begins with a pack of cards. Analyze the cards carefully, taking into account their mana costs, abilities, and how they fit with your deck strategy.</li>
+        <li><b>Choose a Card:</b> Select the card that best aligns with your deck's theme and strategy by clicking on it.</li>
+        <li><b>Assemble Your Deck:</b> Continue this process for several rounds until you have a complete deck with the required number of cards.</li>
+        <li><b>Optimize Your Deck:</b> After drafting, tweak your deck by adding or removing cards to enhance its power and synergy.</li>
+        <li><b>Challenge and Win:</b> With your crafted deck ready, it's time to put your skills to the test in battles against rivals or challenges.</li>
+    </ol>
+
+    <button class="btn btn-primary" @onclick='EventCallback.Factory.Create(this, Redirect)'>Begin Drafting</button>
+
+</div>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MagicTheGatheringApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6cbf66fa68cab273bd51031106d4d2b9ae92a93")]
 [assembly: System.Reflection.AssemblyProductAttribute("MagicTheGatheringApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MagicTheGatheringApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

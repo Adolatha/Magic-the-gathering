@@ -1,0 +1,33 @@
+﻿@page "/cards"
+@using MagicTheGatheringApp.Components
+
+<PageTitle>Magic The Gathering : Cards Dump</PageTitle>
+
+<h1>Cards Display</h1>
+
+
+<Filter FilterParameters="controller!.CurrentFilterParameters" 
+    OnSearch="EventCallback.Factory.Create(this,new Func<CardFilterParameters, Task>(controller.OnSearch))" 
+    OnFilter="EventCallback.Factory.Create(this,new Func<CardFilterParameters, Task>(controller.OnFilter))" 
+    OnReset="EventCallback.Factory.Create(this, controller.OnReset)" />
+
+
+@if (controller.IsLoading)
+{
+        <p>Pleast wait...</p>
+}
+
+else
+{
+        <CardsCollectionComponent Cards="controller.Cards" 
+        onloadMore="controller.LoadMoreCards" 
+        NoMatchingCardsError="@NoMatchingCardsError" 
+        NoMatchingCardsMessage="@NoMatchingCardsMessage" 
+        ShowLoadMoreButton=true/>
+
+        @if (!string.IsNullOrEmpty(NoMatchingCardsError))
+        {
+            <p>@NoMatchingCardsMessage</p>
+        }
+}
+    

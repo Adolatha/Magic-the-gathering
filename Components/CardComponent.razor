@@ -1,0 +1,5 @@
+﻿<div>
+    <img src="@card?.OriginalImageUrl" alt="@card?.Name" @onclick="showCard" />
+    <p class="card-name">@card?.Name</p>
+    <CardDetailsPopup @ref="cardDetails" />
+</div>

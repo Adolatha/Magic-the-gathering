@@ -101,3 +101,5 @@ C:\Users\adola\yvonne\MagicTheGatheringApp\MagicTheGatheringApp\obj\Debug\net8.0
 C:\Users\adola\yvonne\MagicTheGatheringApp\MagicTheGatheringApp\obj\Debug\net8.0\MagicTheGatheringApp.pdb
 C:\Users\adola\yvonne\MagicTheGatheringApp\MagicTheGatheringApp\obj\Debug\net8.0\MagicTheGatheringApp.genruntimeconfig.cache
 C:\Users\adola\yvonne\MagicTheGatheringApp\MagicTheGatheringApp\obj\Debug\net8.0\ref\MagicTheGatheringApp.dll
+C:\Users\adola\yvonne\MagicTheGatheringApp\MagicTheGatheringApp\obj\Debug\net8.0\MagicTheGatheringApp.sourcelink.json
+C:\Users\adola\yvonne\MagicTheGatheringApp\MagicTheGatheringApp\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css

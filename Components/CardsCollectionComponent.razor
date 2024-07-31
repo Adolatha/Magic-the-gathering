@@ -1,0 +1,24 @@
+﻿
+<div>
+    @if (Cards == null)
+    {
+        <p class="loading">Please wait...</p>
+    }
+    else
+    {
+        <div class="cards-container">
+        @foreach (var card in Cards)
+        {
+            <div class="card">
+                <CardComponent card="@card" />
+            </div>
+        }
+        </div>
+        @if (ShowLoadMoreButton)
+        {
+            <button class="load-more-button" @onclick="OnLoadMore">Load More</button>
+        }
+        <p class="@NoMatchingCardsError">@NoMatchingCardsMessage</p>
+        <footer></footer>
+    }
+</div>

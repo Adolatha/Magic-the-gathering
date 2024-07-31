@@ -1,0 +1,61 @@
+﻿.container {
+    padding: 20px;
+}
+
+.hero {
+    background: url('/images/mtg-hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-cards, .latest-news, .community-highlights, .upcoming-events {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 21%; /* Adjust the percentage to change the number of cards per row */
+    margin: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+    .footer-links li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+}
