@@ -6,17 +6,21 @@ namespace MagicTheGatheringApp.Components
     public partial class CardComponent : IDisposable
     {
         [Parameter]
-        public Card? Card { get; set; }
-        private CardDetails? _cardDetails;
+        public Card? card { get; set; }
+        private CardDetails? cardDetails;
 
         private bool _isDisposed = false;
 
         public void Dispose()
+            { 
+            _isDisposed = true;
+            }
+
+       private void showCard()
         {
             if (!_isDisposed)
             {
-                _isDisposed = true;
-                _cardDetails?.Dispose();
+               cardDetails!.Show(Card!);
             }
         }
     }
