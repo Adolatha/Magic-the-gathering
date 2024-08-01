@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MagicTheGatheringApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2db5ad6d73f4fd0303314e2a511b6a4cae972133")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2fb9e2cd562bcbca7ad2fdf6eaa2e7377417b5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MagicTheGatheringApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MagicTheGatheringApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
