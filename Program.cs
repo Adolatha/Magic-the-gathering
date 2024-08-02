@@ -1,10 +1,31 @@
 using MagicTheGatheringApp.Components;
+using MagicTheGatheringApp.Controllers;
+using MagicTheGatheringApp.Models;
+using MagicTheGatheringApp.Services;
+using Microsoft.EntityFrameworkCore;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddScoped<Service>();
+builder.Services.AddScoped<CardService>();
+builder.Services.AddScoped<SetService>();
+builder.Services.AddScoped<DraftService>();
+builder.Services.AddScoped<DeckService>();
+builder.Services.AddScoped<CardsDumpController>();
+builder.Services.AddScoped<SetController>();
+builder.Services.AddScoped<DraftManagerController>();
+builder.Services.AddScoped<DecksController>();
+builder.Services.AddScoped<DeckManagerController>();
+
+
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("MyDbContext")));
 
 var app = builder.Build();
 
